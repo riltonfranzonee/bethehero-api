@@ -7,7 +7,7 @@ class IncidentController {
     const [count] = await connection('incidents').count();
 
     const incidents = await connection('incidents')
-      .join('ongs', 'ong_id', '=', 'incidents.ong_id')
+      .join('ongs', 'ongs.id', '=', 'incidents.ong_id')
       .limit(5)
       .offset((page - 1) * 5)
       .select([
@@ -27,10 +27,6 @@ class IncidentController {
   async store(req, res) {
     const { title, description, value } = req.body;
     const ong_id = req.headers.authorization;
-
-    if (!ong_id) {
-      return res.status(401).json({ error: 'Unauthorized' });
-    }
 
     const [id] = await connection('incidents').insert({
       title,
@@ -52,7 +48,7 @@ class IncidentController {
       .first();
 
     if (incident.ong_id !== ong_id) {
-      return res.status(401).json({ error: 'Unauthorized' });
+      return res.status(401).json({ error: 'Unauthorized.' });
     }
 
     await connection('incidents').where('id', id).delete();

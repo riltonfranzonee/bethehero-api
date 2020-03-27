@@ -1,4 +1,4 @@
-import {Router} from 'express';
+import { Router } from 'express';
 
 import SessionController from './app/controllers/SessionController';
 import OngController from './app/controllers/OngController';
@@ -20,6 +20,5 @@ routes.post('/incidents', validatorIncidentStore, IncidentController.store);
 routes.delete('/incidents/:id', IncidentController.delete);
 
 routes.get('/profile', ProfileController.index);
-
 
 export default routes;
