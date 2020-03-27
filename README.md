@@ -22,6 +22,7 @@ This RESTful API works with SQLite and to help me build the queries I used knex.
 - [**SQLite**](https://www.sqlite.org/index.html)
 - [**Knex**](http://knexjs.org/)
 - [**Yup**](https://github.com/jquense/yup)
+- [**Jest**](https://editorconfig.org/)
 - [**Eslint**](https://eslint.org/)
 - [**Prettier**](https://prettier.io/)
 - [**EditorConfig**](https://editorconfig.org/)
