@@ -9,7 +9,7 @@ Become the hero for someone or ask for help - REST API made with Node.js
 
 🆘 About BeTheHero
 ------------------
-This project is a software that allows organizations to ask for help and share their necessities. The software has a [**web version**](https://github.com/riltonfranzonee/bethehero) made with ReactJS, where the organizations are able to create new incidents and manage them by deleting. The application also has a [**mobile version (currently in development)**](https://github.com/riltonfranzonee/bethero-mobile) made with React Native, where anyone can access to know about the incidents and contact organizations to become a hero. All this software is served by a [**REST API**](https://github.com/riltonfranzonee/bethehero-api) made with Node.js
+This project is a software that allows organizations to ask for help and share their necessities. The software has a [**web version**](https://github.com/riltonfranzonee/bethehero) made with ReactJS, where the organizations are able to create new incidents and manage them by deleting. The application also has a [**mobile version**](https://github.com/riltonfranzonee/bethero-mobile) made with React Native, where anyone can access to know about the incidents and contact organizations to become a hero. All this software is served by a [**REST API**](https://github.com/riltonfranzonee/bethehero-api) made with Node.js
 
 :wrench: Used technologies:
 ----------------------
@@ -22,6 +22,10 @@ This RESTful API works with SQLite and to help me build the queries I used knex.
 - [**SQLite**](https://www.sqlite.org/index.html)
 - [**Knex**](http://knexjs.org/)
 - [**Yup**](https://github.com/jquense/yup)
+- [**Eslint**](https://eslint.org/)
+- [**Prettier**](https://prettier.io/)
+- [**EditorConfig**](https://editorconfig.org/)
+
 
 ## :information_source: How to use this project
 
